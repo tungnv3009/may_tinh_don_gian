@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="may tinh ">
+    <input type="text" id="ket qua" value=" "> <br>
+    <button type="button" onclick="addText(this.value)" value="1"> 1</button>
+    <button type="button" onclick="addText(this.value)" value="2"> 2</button>
+    <button type="button" onclick="addText(this.value)" value="3"> 3</button>
+    <button type="button" onclick="addText(this.value)" value="+"> +</button>
+    <br>
+    <button type="button" onclick="addText(this.value)" value="4"> 4</button>
+    <button type="button" onclick="addText(this.value)" value="5"> 5</button>
+    <button type="button" onclick="addText(this.value)" value="6"> 6</button>
+    <button type="button" onclick="addText(this.value)" value="-"> -</button>
+    <br>
+    <button type="button" onclick="addText(this.value)" value="7"> 7</button>
+    <button type="button" onclick="addText(this.value)" value="8"> 8</button>
+    <button type="button" onclick="addText(this.value)" value="9"> 9</button>
+    <button type="button" onclick="addText(this.value)" value="*"> *</button>
+    <br>
+    <button type="button" onclick="addText(this.value)" value=" "> 0</button>
+    <button type="button" onclick="result()" value="="> =</button>
+    <button type="button" onclick="document.getElementById('ket qua').value = '0' " value="c"> c</button>
+    <button type="button" onclick="addText(this.value)" value="/"> /</button>
+
+</div>
+<script>
+    function addText(value) {
+        document.getElementById("ket qua").value += value
+    }
+
+    function result() {
+        document.getElementById("ket qua").value = eval(document.getElementById("ket qua").value)
+    }
+</script>
+</body>
+</html>
